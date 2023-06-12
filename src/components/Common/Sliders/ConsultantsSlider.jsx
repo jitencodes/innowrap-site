@@ -20,7 +20,7 @@ const consultantsdata = [{
     alt:'image',
     name:'Siddharth Taurani',
     title:'Front End Developer, Exp 15 Years,',
-    department:'IT Department'
+    department:'Administration'
 },
 {   src:'/../public/images/hiring-page/consultant-1.png',
     bgImg:'images/hiring-page/consultant-2.png',
@@ -44,64 +44,6 @@ const consultantsdata = [{
     department:'IT Department'
 },]
 
-const brandImages = [
-    {
-      id:1,
-      src: '/images/hiring-page/brand1.png',
-      width: 59,
-      height: 64,
-      alt: 'ITC Limited Company Logo',
-    },
-    {
-      id:2,
-      src: '/images/hiring-page/brand2.png',
-      width: 64,
-      height: 64,
-      alt: 'Cello Company Logo',
-    },
-    {
-      id:3,
-      src: '/images/hiring-page/brand3.png',
-      width: 108,
-      height: 41,
-      alt: 'Bajaj Allianz Company Logo',
-    },
-    {
-      id:4,
-      src: '/images/hiring-page/brand4.png',
-      width: 73,
-      height: 39,
-      alt: 'Bharti AXA Company Logo',
-    },
-    {
-      id:5,
-      src: '/images/hiring-page/brand5.png',
-      width: 90,
-      height: 48,
-      alt: 'Aditya Birla Group Company Logo',
-    },
-    {
-      id:6,
-      src: '/images/hiring-page/brand6.png',
-      width: 63,
-      height: 61,
-      alt: 'HDFC Ergo Company Logo',
-    },
-    {
-      id:7,
-      src: '/images/hiring-page/brand7.png',
-      width: 133,
-      height: 42,
-      alt: 'Big Bazar Company Logo',
-    },
-    {
-      id:8,
-      src: '/images/hiring-page/brand8.png',
-      width: 78,
-      height: 42,
-      alt: 'Max Burpa Health Insurance Company Logo',
-    },
-  ];
 
 function ConsultantsSlider() {
   const sliderRef = useRef(null);
@@ -153,19 +95,20 @@ function ConsultantsSlider() {
         <div className="relative h-full w-full">
           <div className="flex w-full mt-10 md:mt-24 justify-between mb-3 overflow-x-scroll custom-scrollbar snap-x" ref={sliderRef}>
               {
-                      brandImages?.map((brand, idx)=>{
-                      let   {src, width, height, alt, id} = brand;
+                      consultantsdata?.map((data, idx)=>{
                           return(
-                              <React.Fragment key={id}>
+                              <React.Fragment key={idx}>
                                       <div className="block md:min-w-[300px] mr-6 snap-start" 
                                       key={idx}
                                       onMouseEnter={() => handleMouseEnter(idx)}
                                       onMouseLeave={handleMouseLeave}
                                       >
-                                      {isHovered===idx ? 
-                                      <ConsultantCardHover data={consultantsdata[0]}/>
+                                      {
+                                      isHovered===idx ? 
+                                      <ConsultantCardHover data={data}/>
                                       :
-                                      <ConsultantCard data={consultantsdata[0]}/>}
+                                      <ConsultantCard data={data}/>
+                                      }
                                   </div>
                               </React.Fragment>
                           )

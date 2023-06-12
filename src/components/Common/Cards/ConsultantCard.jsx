@@ -12,7 +12,7 @@ const ConsultantCard = ({data}) => {
   return (
     <>
         <div className="flex gap-8 mb-4 h-[310px] md:h-[418px]">
-            <div className="bg-white w-[220px] md:w-[310px]  dark:border-bd-3 p-4 pb-3 md:pb-6 rounded-2xl shadow-bs-2 flex flex-col">
+            <div className="bg-white w-[220px] md:w-[300px]  dark:border-bd-3 p-4 pb-3 md:pb-6 rounded-2xl shadow-bs-2 flex flex-col">
                 <div className="flex relative">
                     <Image      className="rounded-lg bg-center w-auto tablet:h-[160px] h-[230px] bg-cover bg-blend-color"
                                 src={data.src}
