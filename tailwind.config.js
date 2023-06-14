@@ -29,6 +29,7 @@ module.exports = {
         'slider-btn-2':'linear-gradient(90deg, #FFFFFF 0%, #A8A8B9 100%)',
       },
       boxShadow:{
+        'bs-sm':'2px 2px 0px #212137;',
         'bs-1':'4px 4px 0px #212137;',
         'bs-2':'8px 8px 0px #212137;',
         'bs-3':'0px 0px 8px #8383944d;',

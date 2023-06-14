@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import { jobsBanner1 } from '@/app/data';
 // components
-import HeroBanner3 from '@/components/Common/Banners/HeroBanner2'
 import JobsForm from '@/components/Common/Forms/JobsForm';
 import BrandSlider from '@/components/Common/Sliders/BrandSlider';
 import SelectedList from '@/components/Common/SelectedList';
 import ButtonPrimary from '@/components/Common/Buttons/ButtonPrimary';
-import CustomBtn from '@/components/Common/Buttons/CustomBtn';
+import Faqs from '@/components/Common/FAQs/Faqs';
+import JobCard from '@/components/Common/Cards/JobCard';
+import SingleSlideSlider from '@/components/Common/Sliders/SingleSlideSlider';
+import JobSlider from '@/components/Common/Sliders/JobSlider';
+import HeroBanner2 from '@/components/Common/Banners/HeroBanner2';
 // Imported SVGS
 import GlobalCommunity from '@/../public/svg icons/globalCommunity.svg'
 import FireIcon from '@/../public/svg icons/fireIcon.svg'
@@ -17,10 +20,6 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 import { GoLocation } from 'react-icons/go';
 import { SlBriefcase } from 'react-icons/sl';
 import { MdOutlinePayments } from 'react-icons/md'
-import TestimonialVideoCard2 from '@/components/Common/Cards/TestimonialVideoCard2';
-import Faqs from '@/components/Common/FAQs/Faqs';
-import JobCard from '@/components/Common/Cards/JobCard';
-import SingleSlideSlider from '@/components/Common/Sliders/SingleSlideSlider';
 const jobCardsData=[
   {
     id:1,
@@ -124,7 +123,7 @@ function page() {
     
   return (
     <>
-      <HeroBanner3 form={JobsForm} data={hero1}/>
+      <HeroBanner2 form={JobsForm} data={hero1}/>
       <BrandSlider/>
       <section className="py-10 bg-[#F5F5F5] md:py-20 lg:py-32 px-6 md:px-12 lg:px-20 xl:px-40">
             <p className="text-black font-semibold text-2xl md:text-[40px] text-center mb-6 md:mb-14">Find your most coveted job role</p>
@@ -224,29 +223,9 @@ function page() {
             <h2 className='font-semibold text-[32px] text-white leading-[44px]'>
             What are you looking for ?
             </h2>
-            {/* slider arrows */}
-            <div className="flex items-center justify-end gap-5">
-              <BsArrowLeft className='text-white fontbold text-4xl cursor-pointer' />
-              <BsArrowRight className='text-white fontbold text-4xl cursor-pointer' /> 
-            </div>
           </div>
           {/* slider  */}
-          <div className="flex gap-5 overflow-x-scroll custom-scrollbar">
-            {
-              sliderJobs.map((item,idx)=>{
-                  return<div key={idx} className="bg-white p-5 pb-8 gap-5 min-w-[352px] rounded-xl">
-                    <div className='mb-5'>
-                      <div className="flex flex-col p-2 border rounded-md shadow-bs-1 w-max mb-5">
-                        <BagIcon/>
-                      </div>
-                      <h3 className='text-black text-xl font-semibold'>{item.title}</h3>
-                    </div>
-                      <p className='text-black text-xl font-light'>{item.desc}</p>
-                  </div>
-                
-              })
-            }
-          </div>
+          <JobSlider items={sliderJobs} arrowStyle={'above'} />
       </section>
       <section className="py-10 md:py-20 lg:py-32 px-6 md:px-12 lg:px-20 xl:px-40">
           <div className="flex flex-col mb-8 md:mb-10 md:flex-row justify-between gap-4 md:gap-0">

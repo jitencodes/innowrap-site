@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-function HeroBanner2({data, form:EmailForm}) {
+function HeroBanner2({data, form:Form}) {
     const {text,desc, image} = data
     console.log('data',data)
   return (
@@ -27,7 +27,7 @@ function HeroBanner2({data, form:EmailForm}) {
                 <p className="font-normal max-w-[550px] text-md sm:text-lg md:text-xl text-black -tracking-[0.05em] md:mb-10">
                 {desc}
                 </p>
-                <EmailForm/>
+                <Form/>
             </div>
             <div className="hidden md:block relative w-[40%] max-w-[370px] h-[400px]">
             <Image

@@ -12,8 +12,8 @@ import Consultants from '@/components/Hiring/Consultant'
 export default function Home() {
   return (
     <main className="">
-      <StickyTopBar/>
-      <Header/> 
+      {/* <StickyTopBar/>
+      <Header/>  */}
       <Hiring />
       <Consultants/>
       <Packages/>
@@ -21,7 +21,7 @@ export default function Home() {
       <HiringBanner/>
       <HiringProcess/>
       <Testimonials/>
-      <Footer/>
+      {/* <Footer/> */}
     </main>
   )
 }

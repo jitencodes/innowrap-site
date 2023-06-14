@@ -8,7 +8,7 @@ import CustomBtn from '../Buttons/CustomBtn'
 function JobCard({props}) {
     const {id,title,postedAt, location, salary, type} = props;
   return (
-    <div className="border w-full sm:min-w-max rounded-2xl p-6 xl:p-10 2xl:p-12 hover:shadow-bs-1 transition-all duration-200">
+    <div className="border bg-white w-full sm:min-w-max rounded-2xl p-6 xl:p-10 2xl:p-12 hover:shadow-bs-1 transition-all duration-200">
                   <h3 className='font-bold text-lg'>{title}</h3>
                   <div className="flex gap-4 tab:flex-col tab:gap-2 tab:mt-4 text-[#838394] w-max">
                     <span className='flex'>
