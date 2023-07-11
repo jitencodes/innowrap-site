@@ -43,7 +43,7 @@ function SingleSlideSlider() {
 
   return (
     <>
-        <div className="flex w-full overflow-x-scroll custom-scrollbar snap-x" ref={sliderRef}>
+        <div className="flex w-full overflow-x-scroll hidden-scrollbar snap-x" ref={sliderRef}>
             <TestimonialVideoCard2/>
             <TestimonialVideoCard2/>
             <TestimonialVideoCard2/>

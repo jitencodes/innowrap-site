@@ -36,7 +36,7 @@ const SwipeableButtonList = ({ buttons }) => {
 
   return (
     <div className="flex relative">
-      <div className="flex w-full overflow-x-scroll custom-scrollbar" ref={containerRef} >
+      <div className="flex w-full overflow-x-scroll hidden-scrollbar" ref={containerRef} >
         {buttons?.map((button, index) => (
           <button key={index} onClick={()=>{hadleClick(index)}} className={`${index==active? 'bg-[#EAF0FF] px-4 md:px-7':'px-2 md:px-4'} rounded-r-100 py-2 whitespace-nowrap text-black font-semibold text-xs md:text-xl`}>
             {button}

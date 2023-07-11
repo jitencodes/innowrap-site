@@ -8,7 +8,7 @@ function SelectedList({Buttons, Technologies}) {
       }
   return (
     <div>
-        <div className="flex w-full overflow-x-hidden custom-scrollbar justify-center">
+        <div className="flex w-full overflow-x-hidden hidden-scrollbar justify-center">
               {Buttons?.map((button, index) => (
               <button key={index} onClick={()=>{hadleClick(index)}} className={`${index==active? 'bg-[#EAF0FF] px-4 md:px-7':'px-2 md:px-4'} rounded-r-100 py-2 whitespace-nowrap text-black font-semibold text-xs md:text-xl`}>
                 {button}

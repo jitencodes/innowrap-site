@@ -95,7 +95,7 @@ function TestimonialSlidedr() {
   return (
     <>
         <div className="relative h-full w-full mb-3 mt-10 md:mt-24">
-          <div className="flex w-full justify-between overflow-x-scroll custom-scrollbar snap-x" ref={sliderRef}>
+          <div className="flex w-full justify-between overflow-x-scroll hidden-scrollbar snap-x" ref={sliderRef}>
               {
                       data?.map((item, idx)=>{
                       let   {isVideo} = item;

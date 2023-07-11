@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { jobsBanner1 } from '@/app/data';
+import { jobsBanner1,sliderJobsData, jobCardsData } from '@/app/data';
 // components
 import JobsForm from '@/components/Common/Forms/JobsForm';
 import BrandSlider from '@/components/Common/Sliders/BrandSlider';
@@ -20,94 +20,6 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 import { GoLocation } from 'react-icons/go';
 import { SlBriefcase } from 'react-icons/sl';
 import { MdOutlinePayments } from 'react-icons/md'
-const jobCardsData=[
-  {
-    id:1,
-    title:'Software Engineer, Savemygoal Technology',
-    postedAt:'Jan 4 Wed 2023',
-    location:'Mumbai Suburban',
-    salary:'$48 - $60',
-    type:'Comtract', 
-},
-{
-  id:1,
-  title:'Software Engineer, Savemygoal Technology',
-  postedAt:'Jan 4 Wed 2023',
-  location:'Mumbai Suburban',
-  salary:'$48 - $60',
-  type:'Comtract', 
-},
-{
-  id:1,
-  title:'Software Engineer, Savemygoal Technology',
-  postedAt:'Jan 4 Wed 2023',
-  location:'Mumbai Suburban',
-  salary:'$48 - $60',
-  type:'Comtract', 
-},
-{
-  id:1,
-  title:'Software Engineer, Savemygoal Technology',
-  postedAt:'Jan 4 Wed 2023',
-  location:'Mumbai Suburban',
-  salary:'$48 - $60',
-  type:'Comtract', 
-},
-{
-      id:1,
-      title:'Software Engineer, Savemygoal Technology',
-      postedAt:'Jan 4 Wed 2023',
-      location:'Mumbai Suburban',
-      salary:'$48 - $60',
-      type:'Comtract', 
-  },
-  {
-    id:1,
-    title:'Software Engineer, Savemygoal Technology',
-    postedAt:'Jan 4 Wed 2023',
-    location:'Mumbai Suburban',
-    salary:'$48 - $60',
-    type:'Comtract', 
-},
-{
-  id:1,
-  title:'Software Engineer, Savemygoal Technology',
-  postedAt:'Jan 4 Wed 2023',
-  location:'Mumbai Suburban',
-  salary:'$48 - $60',
-  type:'Comtract', 
-},
-]
-const sliderJobs= [
-  {
-    title:'Permanent / Full-Time Equivalent Jobs',
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum vel massa vitae rhoncus."
-  },
-  {
-    title:'Permanent / Full-Time Equivalent Jobs',
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum vel massa vitae rhoncus."
-  },
-  {
-    title:'Permanent / Full-Time Equivalent Jobs',
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum vel massa vitae rhoncus."
-  },
-  {
-    title:'Permanent / Full-Time Equivalent Jobs',
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum vel massa vitae rhoncus."
-  },
-  {
-    title:'Permanent / Full-Time Equivalent Jobs',
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum vel massa vitae rhoncus."
-  },
-  {
-    title:'Permanent / Full-Time Equivalent Jobs',
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum vel massa vitae rhoncus."
-  },
-  {
-    title:'Permanent / Full-Time Equivalent Jobs',
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum vel massa vitae rhoncus."
-  },
-]
 
 function page() {
   const getData = (e)=>{
@@ -118,6 +30,9 @@ function page() {
     return notFound()
   }
   const hero1 = getData(jobsBanner1)
+  const jobCards = getData(jobCardsData)
+  const sliderJobs = getData(sliderJobsData)
+
   let Buttons = ['Based on skills','Based on roles']
   let Technologies = ['css', 'html', 'react', 'vue js', 'angularjs', 'javascript', 'dom manipulation', 'json', 'ajax', 'node js', 'mysql', 'java', 'problem solving', 'front end engineering', 'quality assurance engineer']
     
@@ -217,7 +132,13 @@ function page() {
       </div>
         
       </section>
-      <section className="bg-[#000000] py-10 md:py-20 lg:py-32 pl-6 md:pl-12 lg:pl-20 xl:pl-40">
+      <section className="relative bg-transparent py-10 md:py-20 lg:py-32 pl-6 md:pl-12 lg:pl-20 xl:pl-40">
+          <Image className='absolute -z-10'
+              src="/images/hiring-page/job-slide-bg.png"
+             fill
+             quality={100}
+              alt=''
+          />
         <p className='uppercase font-semibold text-base tracking-[0.2em] text-white'>discover</p>
         <div className="flex flex-col mb-8 md:mb-10 lg:mb-20 md:flex-row justify-between gap-4 md:gap-0 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
             <h2 className='font-semibold text-[32px] text-white leading-[44px]'>

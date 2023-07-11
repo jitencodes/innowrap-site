@@ -2,60 +2,17 @@ import React from "react";
 import { BiMenuAltRight, BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { VscChromeClose, VscMenu } from "react-icons/vsc";
 import MultilevelAccordion from "./MultilevelAccordion";
-// import MultilevelAccordion from "./MultilevelAccordion";
+import { navlinks } from '@/app/data';
 
 export default function SidebarMenuMobile({mobileMenu, setMobileMenu}) {
-  const data=
-    [
-    {
-      id: 1,
-      title: "Home",
-      subMenuItems: [],
-    },
-    {
-      id: 2,
-      title: "Channels",
-      subMenuItems: [
-        { id: 3, title: "Channel 1" },
-        { id: 4, title: "Channel 2" },
-        { id: 5, title: "Channel 3" },
-      ],
-    },
-    {
-      id: 6,
-      title: "Services",
-      subMenuItems: [
-        {
-          id: 7,
-          title: "Mobile Development",
-          subMenuItems: [
-            { id: 8, title: "Android" },
-            { id: 9, title: "iOS" },
-          ],
-        },
-        {
-          id: 10,
-          title: "Web Development",
-          subMenuItems: [
-            { id: 11, title: "WordPress" },
-            { id: 12, title: "Shopify" },
-            { id: 13, title: "No-Code" },
-            { id: 14, title: "Custom" },
-          ],
-        },
-      ],
-    },
-    {
-      id: 15,
-      title: "About Us",
-      subMenuItems: [],
-    },
-    {
-      id: 16,
-      title: "Contact Us",
-      subMenuItems: [],
-    },
-  ];
+  const getData = (e)=>{
+    const data = e;
+    if(data){
+      return data
+    }
+    return notFound()
+  }
+  const menu = getData(navlinks)
 
   
 
@@ -72,7 +29,7 @@ export default function SidebarMenuMobile({mobileMenu, setMobileMenu}) {
           onClick={() => setMobileMenu(false)}
         />
         ) : ('')}
-        <MultilevelAccordion menu={data} />
+        <MultilevelAccordion menu={menu} />
         
       </div>
 

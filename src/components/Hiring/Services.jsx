@@ -8,7 +8,7 @@ const Services = () => {
     let Technologies = ['css', 'html', 'react', 'vue js', 'angularjs', 'javascript', 'dom manipulation', 'json', 'ajax', 'node js', 'mysql', 'java', 'problem solving', 'front end engineering', 'quality assurance engineer']
     return (
     <>
-        <div className="flex flex-col my-10 md:my-20 lg:my-32 px-6 md:px-12 lg:px-20 xl:px-40">
+        <section className="flex flex-col my-10 md:my-20 lg:my-32 px-6 md:px-12 lg:px-20 xl:px-40">
             <p className="text-blue font-semibold uppercase text-center mb-3 tracking-[0.2em]">discover</p>
             <p className="text-black font-semibold text-2xl md:text-[40px] text-center mb-6 md:mb-14">What you are looking for?</p>
             <SwipeableButtonList buttons={services}/>
@@ -20,7 +20,7 @@ const Services = () => {
                 </button>
             ))}
             </div>
-        </div>
+        </section>
     </>
   )
 }

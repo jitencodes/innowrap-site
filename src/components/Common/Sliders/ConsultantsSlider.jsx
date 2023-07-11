@@ -93,7 +93,7 @@ function ConsultantsSlider() {
   return (
     <>
         <div className="relative h-full w-full">
-          <div className="flex w-full mt-10 md:mt-24 justify-between mb-3 overflow-x-scroll custom-scrollbar snap-x" ref={sliderRef}>
+          <div className="flex w-full mt-10 md:mt-24 justify-between mb-3 overflow-x-scroll hidden-scrollbar snap-x" ref={sliderRef}>
               {
                       consultantsdata?.map((data, idx)=>{
                           return(

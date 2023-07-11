@@ -2,11 +2,11 @@
 import React, { useState } from 'react'
 import { notFound } from 'next/navigation'
 import { HiringBanner1, HiringBanner2, heropagination } from '@/app/data';
-import HeroBanner from '../Common/Banners/HeroBanner';
-import HeroBanner2 from '../Common/Banners/HeroBanner2';
-import BrandSlider from '../Common/Sliders/BrandSlider';
+import HeroBanner from '@/components/Common/Banners/HeroBanner';
+import HeroBanner2 from '@/components/Common/Banners/HeroBanner2';
+import BrandSlider from '@/components/Common/Sliders/BrandSlider';
 import Consultants from './Consultant';
-import EmailForm from '../Common/Forms/EmailForm';
+import EmailForm from '@/components/Common/Forms/EmailForm';
 
 function Hiring() {
   const [heroslide, setHeroslide] = useState(1);
@@ -46,17 +46,6 @@ function Hiring() {
                 )
               })
             }
-            
-            {/* <div className="flex gap-2 bg-[#EAF0FF] cursor-pointer items-center py-1 px-2 rounded-r-100 pr-5">
-                <div className="rounded-full flex justify-center items-center bg-white h-5 w-5 text-center">
-                    <span className="text-blue"> 
-                        2
-                    </span>
-                </div>
-                <p className="text-blue">
-                USA based start save 70%
-                </p>
-            </div> */}
         </div>
 
       <BrandSlider/>

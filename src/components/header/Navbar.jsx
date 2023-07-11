@@ -1,212 +1,26 @@
 import React from "react";
 import Link from "next/link";
 import { BiChevronDown } from "react-icons/bi";
-const subMenu2 =[
-                    {   title:'Front-End Developers',
-                        list:[
-                            {id: 1, name: "", isHeading:true,url: "/jobs"}, 
-                            {id: 2, name: "HTML"}, 
-                            {id: 3, name: "Angular js"}, 
-                            {id: 4, name: "React js"}, 
-                            {id: 5, name: "Vue js"},         
-                        ]
-                    },
-                    {   title:'Front-End Developers',
-                        list:[
-                            {id: 1, name: "", isHeading:true,url: "/jobs"}, 
-                            {id: 2, name: "HTML"}, 
-                            {id: 3, name: "Angular js"}, 
-                            {id: 4, name: "React js"}, 
-                            {id: 5, name: "Vue js"},         
-                        ]
-                    },
-                    {   title:'Front-End Developers',
-                        list:[
-                            {id: 1, name: "", isHeading:true,url: "/jobs"}, 
-                            {id: 2, name: "HTML"}, 
-                            {id: 3, name: "Angular js"}, 
-                            {id: 4, name: "React js"}, 
-                            {id: 5, name: "Vue js"},         
-                        ]
-                    },
-            ]
-const subMenuData = [
-    {section:[
-    [
-    {id: 1, name: "Front-End Developers", isHeading:true,url: "/jobs"}, 
-    {id: 2, name: "HTML"}, 
-    {id: 3, name: "Angular js"}, 
-    {id: 4, name: "React js"}, 
-    {id: 5, name: "Vue js"}, 
-    ],
-    [
-    {id: 1, name: "Back-End Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    {id: 7, name: "C/C++, SharePoint"}, 
-    ],
-    [
-    {id: 1, name: "Designers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    ],
-    [
-    {id: 1, name: "App / PWA / Wearables / IOT Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    ],]
+import { navlinks } from "@/app/data";
 
-    },
-    {section:[
-    [
-    {id: 1, name: "Front-End Developers", isHeading:true}, 
-    {id: 2, name: "HTML"}, 
-    {id: 3, name: "Angular js"}, 
-    {id: 4, name: "React js"}, 
-    {id: 5, name: "Vue js"}, 
-    ],
-    [
-    {id: 1, name: "Back-End Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    {id: 7, name: "C/C++, SharePoint"}, 
-    ],
-    [
-    {id: 1, name: "Designers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    ],
-    [
-    {id: 1, name: "App /PWA /Wearables /IOT Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    ],]
 
-    },
-    {section:[
-    [
-    {id: 1, name: "Front-End Developers", isHeading:true}, 
-    {id: 2, name: "HTML"}, 
-    {id: 3, name: "Angular js"}, 
-    {id: 4, name: "React js"}, 
-    {id: 5, name: "Vue js"}, 
-    ],
-    [
-    {id: 1, name: "Back-End Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    {id: 7, name: "C/C++, SharePoint"}, 
-    ],
-    [
-    {id: 1, name: "Designers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    ],
-    [
-    {id: 1, name: "App / PWA / Wearables / IOT Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    ],]
-
-    },
-    {section:[
-    [
-    {id: 1, name: "Front-End Developers", isHeading:true}, 
-    {id: 2, name: "HTML"}, 
-    {id: 3, name: "Angular js"}, 
-    {id: 4, name: "React js"}, 
-    {id: 5, name: "Vue js"}, 
-    ],
-    [
-    {id: 1, name: "Back-End Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    {id: 7, name: "C/C++, SharePoint"}, 
-    ],
-    [
-    {id: 1, name: "Designers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    ],
-    [
-    {id: 1, name: "App / PWA / Wearables / IOT Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    ],]
-
-    },
-    {section:[
-    [
-    {id: 1, name: "Front-End Developers", isHeading:true}, 
-    {id: 2, name: "HTML"}, 
-    {id: 3, name: "Angular js"}, 
-    {id: 4, name: "React js"}, 
-    {id: 5, name: "Vue js"}, 
-    ],
-    [
-    {id: 1, name: "Back-End Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    {id: 7, name: "C/C++, SharePoint"}, 
-    ],
-    [
-    {id: 1, name: "Designers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    {id: 4, name: "Java"}, 
-    {id: 5, name: ".Net"}, 
-    {id: 6, name: "Ruby on Rails"}, 
-    ],
-    [
-    {id: 1, name: "App / PWA / Wearables / IOT Developers", isHeading:true}, 
-    {id: 2, name: "Nodejs"}, 
-    {id: 3, name: "Python"}, 
-    ],]
-
-    },
-] 
-const menuItems = [
-    { id: 1, name: "IT Services", subMenu: subMenuData},
-    { id: 2, name: "Hire Developers", subMenu: subMenuData },
-    { id: 3, name: "Skills", subMenu: subMenuData },
-    { id: 4, name: "Jobs", url: "/jobs" },
-    { id: 4, name: "About Us", subMenu: subMenuData },
-];
 
 function Navbar() {
+    const getData = (e)=>{
+        const data = e;
+        if(data){
+          return data
+        }
+        return notFound()
+      }
+      const navmenu = getData(navlinks)
+    //   const subMenuData = getData(subMenu)
 
   return (
     <nav>
         <ul className="laptop:hidden flex mt-4 gap-8">
                 {
-                    menuItems?.map((item,idx)=>{
+                    navmenu?.map((item,idx)=>{
                         return (
                             <React.Fragment key={idx}>
                                 {
@@ -219,26 +33,30 @@ function Navbar() {
                                         </Link>
                                     ):
                                     (
-                                        <li className='relative group flex pb-4 cursor-pointer  items-center justify-center'>
+                                        <li>
+                                            <button className='relative group flex pb-4 cursor-pointer  items-center justify-center'>
                                             <p className="font-medium text-base">{item.name} </p> 
                                                 <span className="inline-block align-center">
                                                    <BiChevronDown className="text-black font-medium text-xl"/>
                                                 </span>
                                             <div className="absolute rounded -bottom-[2px] left-0 w-full h-[2px] transform transition-transform duration-300 group-hover:bg-blue"></div>
                                                 
-                                            <div className=" absolute top-full left-0 hidden group-hover:grid grid-cols-3 w-max translate-y-[2px] bg-white rounded-lg shadow-bs-3 py-4 md:py-6 lg:py-10">
-                                                {subMenu2.map((ul, idx2)=>{
-                                                    return <ul key={idx2} className="px-4 md:px-6 lg:px-10 border-r border-light-gray">
-                                                            <li className="text-base text-black font-semibold">{ul.title}</li>
+                                            <div className={`absolute z-10 top-full -translate-x-[${idx*100}px] left-0 hidden group-hover:flex flex-wrap w-max translate-y-[2px] bg-white rounded-lg shadow-bs-3 py-4 md:py-6 lg:py-10`}>
+                                                {item.subMenu.map((ul, idx2)=>{
+                                                    return <ul key={idx2} className="px-4 md:px-6 lg:px-10 border-r border-light-gray text-left">
+                                                            {
+                                                                ul.title?<li className="text-base text-black font-semibold">{ul.title}</li>:<></>
+                                                            }
                                                             {
                                                                 ul.list.map((li, idx3)=>{
-                                                                    return<li key={idx3} className="text-base text-black hover:text-blue font-normal">{li.name}</li>
+                                                                    return<Link key={idx3} href={li.url} className="text-base block text-black hover:text-blue font-normal">{li.name}</Link>
                                                                 })
                                                             }
 
                                                     </ul>
                                                 })}
                                             </div>
+                                            </button>
                                         </li>
                                     )
                                 }

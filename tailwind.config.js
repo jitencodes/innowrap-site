@@ -27,6 +27,8 @@ module.exports = {
         'footer-border':  'linear-gradient(to left, #9747FF, #2623D4)',
         'slider-btn':'linear-gradient(90deg, rgb(255, 255, 255,0.5) 0%, rgb(37, 52, 223,0.5) 41.32%, rgb(13, 20, 114,0.5) 100%)',
         'slider-btn-2':'linear-gradient(90deg, #FFFFFF 0%, #A8A8B9 100%)',
+        'label':'linear-gradient(to bottom, #f1f4fb, #ffffff)',
+        'gradient-blue':'linear-gradient(180deg, #262DD2 0%, #2F53E8 100%)'
       },
       boxShadow:{
         'bs-sm':'2px 2px 0px #212137;',
