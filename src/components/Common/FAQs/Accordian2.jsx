@@ -40,7 +40,7 @@ function Faqs() {
                     data.map((items,idx)=>{
                         const {ques,ans} = items;
                         return <>
-                                <div onClick={()=>{handleClick(idx)}} className={`transition-all  duration-300 flex flex-col ${open===idx?'border shadow-bs-1 py-2':' '} mb-3 px-8 rounded-xl`}>
+                                <div onClick={()=>{handleClick(idx)}} className={`transition-all  duration-300 flex flex-col ${open===idx?'border shadow-bs-1 py-2':' '} mb-3 px-8 rounded-xl cursor-pointer`}>
                                     <div className='flex justify-between font-bold text-lg'>
                                         <div className="flex items-start pt-[6px]">
                                             <span className={`${open===idx?'text-white bg-gradient-to-b from-[#9747FF] to-[#2623D4]':'text-white bg-black'} h-[20px] w-[20px] rounded-full flex items-center justify-center text-xs`}>{idx+1}</span> 

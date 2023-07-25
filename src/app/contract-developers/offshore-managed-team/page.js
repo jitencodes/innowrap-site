@@ -497,7 +497,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative bg-white py-10 md:py-20 lg:py-32">
+      <section className="relative bg-white py-10 md:py-20 lg:py-32 relative">
         <p className="pl-6 md:pl-12 lg:pl-20 xl:pl-40 uppercase font-semibold text-base tracking-[0.2em] text-blue">
           OUR SUCCESS STORIES
         </p>
