@@ -58,7 +58,7 @@ function page() {
   }
   const Banner = getData(serviecBanner)
   return (<>
-    <section className='px-6 bg-black md:px-12 lg:px-20 xl:px-40 py-8 md:py-10 lg:py-12 xl:py-14'>
+    <section className='px-6 bg-black md:px-12 lg:px-20 xl:px-40 py-8 md:py-10 lg:py-12 xl:py-14 pt-16 md:pt-24 lg:pt-32 xl:pt-36'>
       <div className="flex gap-8 md:gap-12 items-center justify-between">
         <div className="flex phone:gap-4 gap-8 md:gap-12 items-center">
           <div className="flex relative h-[75px] w-[75px] md:h-[85px]  md:w-[85px] lg:h-[100px]  lg:w-[100px] xl:h-[132px]  xl:w-[132px] ">

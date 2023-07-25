@@ -29,17 +29,19 @@ export default function Home() {
         }
         return notFound()
       }
-      const hero = getData(HiringBannerExecutive)
-      const hireType = getData(sliderJobsData)
+      const hero1 = getData(HiringBannerExecutive)
       const Stories = getData(sliderJobsData  )
 
   return (
     <main className="">
-      {/* <StickyTopBar/> */}
       <Header/> 
-      <HeroBanner2 data={hero} form={EmailForm}/>
-      <BrandSlider/>
-      
+      <StickyTopBar/>
+      <section aria-describedby='hero-section'>
+        <div className="flex flex-col relative z-20 bg-white pt-16 md:pt-24 lg:pt-32 xl:pt-36">
+          <HeroBanner2 form={EmailForm} data={hero1}/>
+        </div>
+        <BrandSlider/>
+      </section>
       <section className="relative flex px-6 md:px-12 lg:px-20 xl:px-40 flex-col items-center py-10 md:py-20 lg:py-24">
         <div className="flex flex-col md:flex-row gap-8 md:gap-10 ">
           <div className="block md:flex-1">

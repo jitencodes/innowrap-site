@@ -188,7 +188,7 @@ const StorySlider = ({ items, arrowStyle }) => {
   // };
   return (
     <>
-      <div className="flex absolute top-3 right-0 items-center justify-end gap-5 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
+      <div className="flex absolute top-14 md:top-24 lg:top-36 right-0 items-center justify-end gap-5 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
         <BsArrowLeft
           onClick={handlePrevious}
           className={`text-black fontbold text-4xl cursor-pointer`}
@@ -198,7 +198,7 @@ const StorySlider = ({ items, arrowStyle }) => {
           className={`text-black fontbold text-4xl cursor-pointer`}
         />
       </div>
-      <div className="overflow-hidden">  
+      <div className="overflow-hidden mt-8 md:mt-10 lg:mt-20">  
         <Slider  ref={sliderRef} {...settings}>
           {stories.map((item, idx) => {
             return <StoryCard key={idx} item={item} />;

@@ -59,10 +59,14 @@ export default function Home() {
 
   return (
     <main className="">
-      {/* <StickyTopBar/> */}
+      <StickyTopBar/>
       <Header/> 
-      <HeroBannerxForm data={hero2} form={EmailForm}/>
-      <BrandSlider/>
+      <section aria-describedby='hero-section'>
+        <div className="flex flex-col relative z-20 bg-white pt-16 md:pt-24 lg:pt-32 xl:pt-36">
+          <HeroBannerxForm data={hero2} form={EmailForm}/>
+        </div>
+        <BrandSlider/>
+      </section>
       <section className="overflow-hidden relative flex px-6 md:px-12 lg:px-20 xl:px-40 flex-col bg-gradient-1-reverse py-10 md:py-20 lg:py-24">
       {/* <p className="text-blue font-semibold mb-3 tracking-[0.2em] uppercase">Why ReactJS?</p> */}
             <p className="text-white font-bold text-xl md:text-[30px] leading-snug mb-3">Why ReactJS?</p>

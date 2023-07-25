@@ -13,13 +13,8 @@ import HeroBanner2 from '@/components/Common/Banners/HeroBanner2';
 // Imported SVGS
 import GlobalCommunity from '@/../public/svg icons/globalCommunity.svg'
 import FireIcon from '@/../public/svg icons/fireIcon.svg'
-import BagIcon from '@/../public/svg icons/bagIcon.svg'
 import QouteIcon from '@/../public/svg icons/qoute-icon.svg'
-// react icons
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
-import { GoLocation } from 'react-icons/go';
-import { SlBriefcase } from 'react-icons/sl';
-import { MdOutlinePayments } from 'react-icons/md'
+import StickyTopBar from '@/components/header/StickyTopBar';
 
 function page() {
   const getData = (e)=>{
@@ -38,8 +33,13 @@ function page() {
     
   return (
     <>
-      <HeroBanner2 form={JobsForm} data={hero1}/>
-      <BrandSlider/>
+      <StickyTopBar/>
+      <section aria-describedby='hero-section'>
+        <div className="flex flex-col relative z-20 bg-white pt-16 md:pt-24 lg:pt-32 xl:pt-36">
+          <HeroBanner2 form={JobsForm} data={hero1}/>
+        </div>
+        <BrandSlider/>
+      </section>
       <section className="py-10 bg-[#F5F5F5] md:py-20 lg:py-32 px-6 md:px-12 lg:px-20 xl:px-40">
             <p className="text-black font-semibold text-2xl md:text-[40px] text-center mb-6 md:mb-14">Find your most coveted job role</p>
             <SelectedList Buttons={Buttons} Technologies={Technologies} />

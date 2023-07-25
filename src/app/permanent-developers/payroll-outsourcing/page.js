@@ -1,23 +1,12 @@
-import Hiring from '@/components/Hiring'
-import Packages from '@/components/Hiring/Packages'
-import HiringBanner from '@/components/Hiring/HiringBanner'
-import HiringProcess from '@/components/Hiring/HiringProcess'
-import Services from '@/components/Hiring/Services'
 import Testimonials from '@/components/Hiring/Testimonials'
 import { Footer } from '@/components/Footer/Footer'
 import Header from '@/components/header/Header'
 import StickyTopBar from '@/components/header/StickyTopBar'
-import Consultants from '@/components/Hiring/Consultant'
 import EmailForm from '@/components/Common/Forms/EmailForm';
 import { HiringBannerPO,sliderJobsData,hiringWorkData,payrollFeatures } from '@/app/data';
 import BrandSlider from '@/components/Common/Sliders/BrandSlider'
-import HeroBannerxForm from '@/components/Common/Banners/HeroBannerxForm'
 import Image from 'next/image'
-import Accordian2 from '@/components/Common/FAQs/Accordian2'
 import Faqs from '@/components/Common/FAQs/Faqs'
-import StorySlider from '@/components/Common/Sliders/StorySlider'
-import HeroBanner from '@/components/Common/Banners/HeroBanner'
-import JobSlider from '@/components/Common/Sliders/JobSlider'
 import HeroBanner2 from '@/components/Common/Banners/HeroBanner2'
 import Link from 'next/link'
 
@@ -30,18 +19,19 @@ export default function Home() {
         }
         return notFound()
       }
-      const hero = getData(HiringBannerPO)
-      const hireType = getData(sliderJobsData)
-      const Stories = getData(sliderJobsData  )
-      const hiringWork = getData(hiringWorkData)
+      const hero1 = getData(HiringBannerPO)
       const features = getData(payrollFeatures)
 
   return (
     <main className="">
-      {/* <StickyTopBar/> */}
-      <Header/> 
-      <HeroBanner2 data={hero} form={EmailForm}/>
-      <BrandSlider/>
+      <Header/>
+      <StickyTopBar/>
+      <section aria-describedby='hero-section'>
+        <div className="flex flex-col relative z-20 bg-white pt-16 md:pt-24 lg:pt-32 xl:pt-36">
+          <HeroBanner2 form={EmailForm} data={hero1}/>
+        </div>
+        <BrandSlider/>
+      </section> 
       <section className="relative flex px-6 md:px-12 lg:px-20 xl:px-40 flex-col items-center py-10 md:py-20 2xl:py-24">
           <div className="flex tablet:items-center flex-col md:flex-row-reverse mb-6 lg:mb-12 bg-[#F1F4FB]">
                 <div className="flex relative w-fit md:flex-1 flex-col md:h-full md:justify-center px-6 lg:px-8 xl:px-12 2xl:px-14 py-3 md:py-4 lg:py-6">

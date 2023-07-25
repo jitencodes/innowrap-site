@@ -8,7 +8,7 @@ import BrandSlider from '@/components/Common/Sliders/BrandSlider';
 import Consultants from './Consultant';
 import EmailForm from '@/components/Common/Forms/EmailForm';
 
-function Hiring() {
+function  Hiring() {
   const [heroslide, setHeroslide] = useState(1);
   const getData = (e)=>{
     const data = e;
@@ -22,7 +22,7 @@ function Hiring() {
   const pagination = getData(heropagination)
   return (
     <section aria-describedby='hero-section'>
-      <div className="flex flex-col relative z-20 bg-white pt-36">
+      <div className="flex flex-col relative z-20 bg-white pt-16 md:pt-24 lg:pt-32 xl:pt-36">
         {heroslide===1?<HeroBanner data={hero1}/>:<HeroBanner2 data={hero2} form={EmailForm}/>}
         {/* Hero Banner Pagination */}
         <div className="flex px-6 md:px-12 lg:px-20 xl:px-40 gap-4 py-7">

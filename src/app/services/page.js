@@ -53,12 +53,14 @@ function page() {
     }
     return notFound()
   }
-  const Banner = getData(serviecBanner)
+  const hero1 = getData(serviecBanner)
   return (<>
-    <section>
-      <HeroBanner2 form={EmailForm} data={Banner}/>
+    <section aria-describedby='hero-section'>
+      <div className="flex flex-col relative z-20 bg-white pt-16 md:pt-24 lg:pt-32 xl:pt-36">
+        <HeroBanner2 form={EmailForm} data={hero1}/>
+      </div>
       <BrandSlider/>
-    </section>
+    </section> 
     <section className="flex px-6 md:px-12 lg:px-20 xl:px-40 flex-col items-center py-10 pd:py-20 lg:py-32">
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="p-2 md:mr-8">
@@ -194,7 +196,7 @@ function page() {
     
     </section>
 
-    <section className="px-6 md:px-12 lg:px-20 xl:px-40 mb-10 md:mb-20 xl:mb-28">
+    <section className="px-6 md:px-12 lg:px-20 xl:px-40 mt-10 md:mt-20 xl:mt-28">
             <div className="flex py-6 md:py-10 items-center w-full rounded-lg px-3 md:px-12" style={{backgroundImage:'url(images/hiring-page/requirement-banner.png)', backgroundSize:'cover'}}>
                 <div className="flex flex-col lg:flex-row md:justify-between items-start gap-4 md:gap-0 md:items-center w-full">
                     <div className="flex flex-col gap-3 desktop:max-w-[350px] w-full">
@@ -212,16 +214,18 @@ function page() {
                 </div>
             </div>
       </section>
-
-    <section className="bg-black py-10 md:py-20 lg:py-32 pl-6 md:pl-12 lg:pl-20 xl:pl-40">
-        <p className='uppercase font-semibold text-base tracking-[0.2em] text-white'>OUR SUCCESS STORIES</p>
-        <div className="flex flex-col mb-8 md:mb-10 lg:mb-20 md:flex-row justify-between gap-4 md:gap-0 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
-            <h2 className='font-semibold text-[32px] text-white leading-[44px]'>
+    
+      <section className="relative bg-white py-10 md:py-20 lg:py-32">
+        <p className="pl-6 md:pl-12 lg:pl-20 xl:pl-40 uppercase font-semibold text-base tracking-[0.2em] text-blue">
+          OUR SUCCESS STORIES
+        </p>
+        <div className="pl-6 md:pl-12 lg:pl-20 xl:pl-40 flex flex-col md:flex-row justify-between gap-4 md:gap-0 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
+          <h2 className="font-semibold text-[32px] text-black leading-[44px]">
             Lorem ipsum dolor sit amet.
-            </h2>
-          </div>
-          {/* slider  */}
-          <StorySlider items={sliderJobs} arrowStyle={'above'} />
+          </h2>
+        </div>
+        {/* slider  */}
+        <StorySlider items={sliderJobs} arrowStyle={"above"} />
       </section>
 
     <Testimonials/>

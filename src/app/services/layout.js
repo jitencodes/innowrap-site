@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={manrope.className}>
-        {/* <StickyTopBar/> */}
+        <StickyTopBar/>
         <Header/>
         {children}
         <Footer/>

@@ -5,7 +5,7 @@ import ResumeUploadForm from '@/components/Jobs/ResumeUpload';
 
 function page() {
   return (
-    <div className=" flex justify-center text-center h-fit relative bg-[#F1F4FB]">
+    <div className=" flex justify-center text-center h-fit relative bg-[#F1F4FB] pt-16 md:pt-24 lg:pt-32 xl:pt-36">
       <div className="flex -top-4 left-0 absolute h-[400px] w-screen -z-1">
         <Image
               src="/svg icons/resumeBg1.svg"

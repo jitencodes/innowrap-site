@@ -35,9 +35,11 @@ export default function Home() {
     <main className="">
       <StickyTopBar/>
       <Header/>
-      <div className="flex flex-col relative z-20 bg-white pt-16 md:pt-24 lg:pt-32 xl:pt-36 ">
-            <HeroBanner data={hero2} form={EmailForm}/>
-      </div>
+        <section aria-describedby='hero-section'>
+            <div className="flex flex-col relative z-20 bg-white pt-16 md:pt-24 lg:pt-32 xl:pt-36">
+                    <HeroBanner data={hero2} form={EmailForm}/>
+            </div>
+        </section>
       <BrandSlider/>
       <Consultants/>
       <Services/>
