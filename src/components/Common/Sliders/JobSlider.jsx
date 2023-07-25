@@ -52,14 +52,14 @@ function JobSlider({items,arrowStyle}) {
     <>
             {/* slider arrows Above */}
             {arrowStyle==='above'?
-                <div className="flex items-center justify-end gap-5 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
+                <div className="flex absolute tab:top-28 top-16 md:top-24 right-0 items-center justify-end gap-5 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
                     <BsArrowLeft onClick={handleSlideLeft} className={`text-white fontbold text-4xl cursor-pointer ${isScrollable.left?'opacity-100':'opacity-50'}`} />
                     <BsArrowRight onClick={handleSlideRight} className={`text-white fontbold text-4xl cursor-pointer ${isScrollable.right?'opacity-100':'opacity-50'}`} /> 
                 </div>
             :<></>}
             {/* Slider element */}
         <div className="relative h-full w-full">
-          <div className="flex w-full mt-10 md:mt-24 justify-between mb-3 overflow-x-scroll hidden-scrollbar snap-x" ref={sliderRef}>
+          <div className="flex w-full tab:mt-16 mt-10 md:mt-24 justify-between mb-3 overflow-x-scroll hidden-scrollbar snap-x" ref={sliderRef}>
             {
               items.map((item,idx)=>{
                   return <JobSilderCard key={idx} item={item} />

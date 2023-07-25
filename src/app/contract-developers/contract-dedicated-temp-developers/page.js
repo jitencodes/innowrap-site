@@ -434,7 +434,7 @@ export default function Home() {
           />
         <p className='uppercase font-semibold text-base tracking-[0.2em] text-white'>discover</p>
         <div className="flex flex-col mb-8 md:mb-10 lg:mb-20 md:flex-row justify-between gap-4 md:gap-0 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
-            <h2 className='font-semibold text-[32px] text-white leading-[44px]'>
+            <h2 className='font-semibold text-2xl md:text-3xl text-[32px] text-white leading-[44px]'>
             What are you looking for ?
             </h2>
           </div>

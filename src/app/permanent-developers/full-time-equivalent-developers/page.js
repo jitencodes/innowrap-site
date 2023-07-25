@@ -45,8 +45,8 @@ export default function Home() {
       </section>
       <section className="relative bg-gradient-1-reverse pt-10 md:pt-20 pb-6 md:pb-16 pl-6 md:pl-12 lg:pl-20 xl:pl-40">
         <p className='uppercase font-semibold text-base tracking-[0.2em] text-white'>discover</p>
-        <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-0 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
-            <h2 className='font-semibold text-[32px] text-white leading-[44px]'>
+        <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-0">
+            <h2 className='font-semibold text-2xl md:text-3xl lg:text-[32px] text-white leading-[44px]'>
             What are you looking for ?
             </h2>
           </div>
@@ -69,7 +69,7 @@ export default function Home() {
                         />
               </div>
               <p className='text-black text-base font-medium mt-1 pl-[14px]'>Innowrap is a professional, dedicated team furnishing top quality talent and domain expertise. They have demonstrated real understanding of our issues and time and again have come up with their own innovative solutions that has helped us a great deal.”</p>
-              <div className="flex items-center gap-[10px] pl-[14px] mt-2">
+              <div className="flex items-center gap-[10px] pl-[14px] mt-2 md:mt-4">
                 <div className="flex relative w-[42px] md:w-[72px] h-[42px] md:h-[72px] rounded-full border-[6px] border-[#F3F5F8] overflow-hidden">
                     <Image
                     src="/images/hiring-page/client-testimonial-profile-3.png"
