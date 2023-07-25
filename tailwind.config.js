@@ -12,6 +12,7 @@ module.exports = {
         manrope: ["var(--font-manrope)"],
       },
       screens: {
+        'phone':  {'max': '360px'},
         'tab': {'max': '639px'},
         'tablet': {'max': '767px'},
         'laptop': {'max': '1023px'},

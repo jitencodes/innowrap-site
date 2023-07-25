@@ -8,7 +8,7 @@ function HeroBannerxForm({data, form:Form}) {
   return (
     <>
          {/* Hero banner  */}
-         <div className="px-6 md:px-12 lg:px-20 xl:px-40 flex h-fit flex-col md:flex-row justify-between items-center mt-6 md:mt-12">
+         <div className="px-6 md:px-12 lg:px-20 xl:px-40 pt-6 md:pt-12 min-h-[calc(100vh_-_285px)] flex h-fit flex-col md:flex-row justify-between items-center">
             <div className="w-full md:w-7/12 lg:w-1/2">
                 <p className="font-semibold text-3xl sm:text-4xl md:text-5xl text-black -tracking-[0.05em] md:mb-10">
                 {text}

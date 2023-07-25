@@ -70,7 +70,7 @@ function BrandSlider() {
   return (
     <>
         {/* Hero Brand List */}
-        <div className="flex px-6 md:px-12 lg:px-20 xl:px-40 mt-10 md:mt-12 justify-between mb-3">
+        <div className="flex px-6 md:px-12 lg:px-20 xl:px-40 py-10 md:py-12 justify-between">
         <Swiper
             spaceBetween={0}
             slidesPerView={2}

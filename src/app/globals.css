@@ -21,6 +21,8 @@
 
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
   scrollbar-width: 7px;
   scrollbar-color: #f1f1f1 #888;
 }

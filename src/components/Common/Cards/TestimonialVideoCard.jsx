@@ -3,7 +3,7 @@ import Image from 'next/image'
 const TestimonialVideoCard = ({item}) => {
   return (
     <>
-        <div className="relative flex gap-8 h-[330px] md:h-[412px] mb-4 w-max">
+        <div className="relative flex gap-8 h-[330px] md:h-[412px] mb-2 w-max">
           <div className="relative overflow-hidden w-[220px] md:w-[300px] border border-b1 rounded-2xl shadow-bs-2 flex flex-col justify-end">
               <Image  className='absolute -z-10'
                     src="/images/hiring-page/client-testimonial-profile-1.png"

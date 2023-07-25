@@ -33,9 +33,11 @@ export default function Home() {
       
   return (
     <main className="">
-      {/* <StickyTopBar/> */}
-      <Header/> 
-      <HeroBanner data={hero2} form={EmailForm}/>
+      <StickyTopBar/>
+      <Header/>
+      <div className="flex flex-col relative z-20 bg-white pt-16 md:pt-24 lg:pt-32 xl:pt-36 ">
+            <HeroBanner data={hero2} form={EmailForm}/>
+      </div>
       <BrandSlider/>
       <Consultants/>
       <Services/>
@@ -438,7 +440,7 @@ export default function Home() {
           <JobSlider items={sliderJobs} arrowStyle={'above'} />
       </section>
       <Testimonials/>
-      <section className="bg-white py-10 md:py-20 lg:py-32">
+      <section className="bg-white py-10 md:py-20 lg:py-32 relative">
         <p className='pl-6 md:pl-12 lg:pl-20 xl:pl-40 uppercase font-semibold text-base tracking-[0.2em] text-blue'>OUR SUCCESS STORIES</p>
         <div className="pl-6 md:pl-12 lg:pl-20 xl:pl-40 flex flex-col mb-8 md:mb-10 lg:mb-20 md:flex-row justify-between gap-4 md:gap-0 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
             <h2 className='font-semibold text-[32px] text-black leading-[44px]'>
@@ -446,7 +448,7 @@ export default function Home() {
             </h2>
           </div>
           {/* slider  */}
-          <StorySlider items={sliderJobs} arrowStyle={'above'} />
+          {/* <StorySlider items={sliderJobs} arrowStyle={'above'} /> */}
       </section>
       <section className="px-6 md:px-12 lg:px-20 xl:px-40 mb-10 md:mb-20 xl:mb-28">
             <div className="relative overflow-hidden flex py-6 md:py-10 items-center w-full rounded-lg px-3 md:px-12 -z-10" style={{backgroundImage:'url(images/hiring-page/requirement-banner.png)', backgroundSize:'cover'}}>

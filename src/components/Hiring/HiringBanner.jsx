@@ -9,13 +9,13 @@ const HiringBanner = () => {
         textFillColor: 'transparent',
       };
   return (
-    <>
-        <div className="flex flex-col md:flex-row px-6 md:px-12 lg:px-20 xl:px-40">
+    <section className='px-6 md:px-12 lg:px-20 xl:px-40'>
+        <div className="flex flex-col md:flex-row">
             <div className="flex order-2 md:order-1 md:w-1/2 max-[600px]:w-full bg-light-bg px-6 lg:px-20 py-6 md:py-12 lg:py-24 flex-col">
                 <p className="text-black font-semibold text-justify md:text-left text-lg md:text-[26px] lg:text-[32px] leading-tight mb-3 md:mb-6">
                 Startups and SMEs lack the infrastructure to hire 
                 <span style={style} className="font-bold">
-                economical tech talent from emerging markets
+                    economical tech talent from emerging markets
                 </span>
                 </p>
 
@@ -40,7 +40,7 @@ const HiringBanner = () => {
 
             </div>
         </div>
-        <div className="flex flex-col md:flex-row px-6 md:px-12 lg:px-20 xl:px-40">
+        <div className="flex flex-col md:flex-row">
             <div className="flex md:w-1/2 max-[600px]:w-full">
                 <Image
                 src="/images/hiring-page/banner-3.png"
@@ -51,7 +51,7 @@ const HiringBanner = () => {
                     />
             </div>
             <div className="flex md:w-1/2 max-[600px]:w-full bg-light-bg px-6 lg:px-20 py-6 md:py-12 lg:py-24 flex-col">
-                <p className="text-black font-bold text-[32px] mb-6">
+                <p className="text-black font-semibold text-justify md:text-left text-lg md:text-[26px] lg:text-[32px] leading-tight mb-3 md:mb-6">
                 <span style={style} className="font-bold">
                 “Innowrap levels the playing field
                 </span>
@@ -68,7 +68,7 @@ const HiringBanner = () => {
                 </ul>
             </div>            
         </div>
-    </>
+    </section>
   )
 }
 

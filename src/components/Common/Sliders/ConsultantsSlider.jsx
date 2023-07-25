@@ -116,11 +116,17 @@ function ConsultantsSlider() {
                   }
 
           </div>
-            <div className={`absolute top-0 left-0 flex md:w-[10%] h-full bg-slider-btn mix-blend-multiply justify-center items-center ${isScrollable.left?'opacity-100':'opacity-0'}`}>
-              <BiChevronLeft onClick={handleSlideLeft} className={`text-white font-thin text-[40px] cursor-pointer`} size={40}/>
+            <div className={`absolute top-0 left-0 flex md:w-[10%] h-full justify-center items-center ${isScrollable.left?'opacity-100':'opacity-0'}`}
+                 style={{backgroundImage: `linear-gradient(90deg, #0d1472ad 0%, #2534dfa8 41.32%, #ffffff0d 100%)`}}
+                 onClick={handleSlideLeft} 
+            >
+              <BiChevronLeft className={`text-white font-thin text-[40px] cursor-pointer`} size={40}/>
             </div>
-            <div className={`absolute top-0 right-0 flex md:w-[10%] h-full bg-slider-btn mix-blend-multiply justify-center items-center ${isScrollable.right?'opacity-100':'opacity-0'}`}>
-              <BiChevronRight onClick={handleSlideRight} className={`text-white font-thin text-[40px] cursor-pointer`} size={40}/> 
+            <div className={`absolute top-0 right-0 flex md:w-[10%] h-full justify-center items-center ${isScrollable.right?'opacity-100':'opacity-0'}`} 
+                 style={{backgroundImage: `linear-gradient(-90deg, #0d1472ad 0%, #2534dfa8 41.32%, #ffffff0d 100%)`}}
+                 onClick={handleSlideRight}
+            >
+              <BiChevronRight className={`text-white font-thin text-[40px] cursor-pointer`} size={40}/> 
             </div>
         </div>
 

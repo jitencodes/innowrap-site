@@ -6,9 +6,8 @@ import Link from 'next/link'
 
 function StoryCard({item}) {
   return (
-    <div className="w-fit snap-start
-    ">
-        <div className="flex mb-7 min-w-[352px] h-[300px] rounded-xl overflow-hidden mr-8 bg-white relative">
+    <div className="w-fit snap-start">
+        <div className="flex mb-7 tablet:max-w-[352px] h-[300px] rounded-xl overflow-hidden mr-8 bg-white relative">
         <Image
                   src={item.image}
                   fill
@@ -16,7 +15,7 @@ function StoryCard({item}) {
                   alt='economical tech talent from emerging markets'
                   />
         </div>
-        <div className='bg-blue p-5 pb-8 gap-5 min-w-[352px] rounded-xl mr-8'>
+        <div className='bg-blue p-5 pb-8 gap-5 tablet:max-w-[352px] rounded-xl mr-8'>
             <div className=" mb-5 h-[95px] w-[200px] relative">
               <Image
                   src={item.brand}

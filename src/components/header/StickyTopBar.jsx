@@ -4,7 +4,7 @@ import CustomBtn from '../Common/Buttons/CustomBtn'
 
 function StickyTopBar() {
   return (
-    <div className="flex py-3 bg-blue gap-4 text-white justify-between items-center px-6 md:px-10">
+    <div className="flex py-3 bg-blue gap-4 text-white justify-between items-center px-6 md:px-10 fixed top-0 z-10 w-screen">
       <p className='text-lg font-bold tablet:font-semibold tablet:text-sm'>
       Deploy Top Indian Developers on your project within 24 hours
       </p>

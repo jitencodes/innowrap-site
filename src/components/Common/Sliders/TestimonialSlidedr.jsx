@@ -94,7 +94,7 @@ function TestimonialSlidedr() {
       };
   return (
     <>
-        <div className="relative h-full w-full mb-3 mt-10 md:mt-24">
+        <div className="relative h-full w-full mt-10 md:mt-24">
           <div className="flex w-full justify-between overflow-x-scroll hidden-scrollbar snap-x" ref={sliderRef}>
               {
                       data?.map((item, idx)=>{
@@ -115,10 +115,15 @@ function TestimonialSlidedr() {
                   }
 
           </div>
-            <div onClick={handleSlideLeft} className={`absolute cursor-pointer top-0 left-0 flex md:w-[10%] h-full bg-slider-btn-2 mix-blend-multiply justify-center items-center ${isScrollable.left?'opacity-100':'opacity-0'}`}>
+            <div onClick={handleSlideLeft} className={`absolute cursor-pointer top-0 left-0 flex md:w-[10%] h-full justify-center items-center ${isScrollable.left?'opacity-100':'opacity-0'}`}
+                 style={{backgroundImage: `linear-gradient(90deg, #0202028a  0%, #00000042 41.32%, #ffffff0d 100%)`}}
+
+            >
               <BiChevronLeft className={`text-white font-thin text-[40px] cursor-pointer`} size={40}/>
             </div>
-            <div onClick={handleSlideRight} className={`absolute cursor-pointer top-0 right-0 flex md:w-[10%] h-full bg-slider-btn-2 mix-blend-multiply justify-center items-center ${isScrollable.right?'opacity-100':'opacity-0'}`}>
+            <div onClick={handleSlideRight} className={`absolute cursor-pointer top-0 right-0 flex md:w-[10%] h-full justify-center items-center ${isScrollable.right?'opacity-100':'opacity-0'}`}
+                 style={{backgroundImage: `linear-gradient(-90deg, #0202028a  0%, #00000042 41.32%, #ffffff0d 100%)`}}
+            >
               <BiChevronRight className={`text-white font-thin text-[40px] cursor-pointer`} size={40}/> 
             </div>
         </div>
