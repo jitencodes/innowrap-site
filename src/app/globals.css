@@ -48,6 +48,27 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
+.scrollBar::-webkit-scrollbar {
+  width: 7px;
+  height:7px;
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  background-color: #888;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  background-color: #f1f1f1;
+  width:7px;
+  height:7px;
+}
+
+.scrollBar::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc9c9;
+}
+
+
+
 .hidden-scrollbar {
   scrollbar-width: 1px;
   scrollbar-color: #f1f1f1 #888;
@@ -101,3 +122,49 @@ body::-webkit-scrollbar-thumb:hover {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(275deg, #2623d4, #9747ff);
 }
+
+
+
+/* styling for slot picker */
+
+.react-datepicker.calendar{
+  border: none !important;
+}
+.react-datepicker__header {
+  background: transparent !important;
+}
+.react-datepicker__current-month{
+  color: #2623D4 !important;
+  font-weight: 600 !important;
+  font-size: 21px !important;
+}
+.react-datepicker__day-name{
+  font-size: 15px !important;
+  color: #A3A3A3 !important;
+  font-weight: normal !important;
+}
+.react-datepicker__day{
+  border-radius: 50% !important;
+  color: black !important;
+}
+.react-datepicker__day--highlighted{
+  background-color: #E7E6FF !important;
+  color: black !important;
+}
+.react-datepicker__day--keyboard-selected{
+  border: 1px solid black !important;
+  background-color: #E7E6FF !important;
+  color: black !important;
+}
+.react-datepicker__day--disabled{
+  color: #A3A3A3 !important;
+}
+
+.react-datepicker__day--outside-month{
+  color: transparent !important;
+  background-color: transparent !important;
+}
+  
+
+
+ /* react-datepicker__day--025 react-datepicker__day--disabled react-datepicker__day--weekend  */
