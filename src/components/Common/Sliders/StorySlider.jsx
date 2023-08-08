@@ -121,36 +121,36 @@ const StorySlider = ({ items, arrowStyle }) => {
     sliderRef.current.slickNext();
   };
   const settings = {
-    dots: true,
-    infinite: true,
+    // dots: true,
+    // infinite: true,
     speed: 500,
     centerMode: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 2,
-    centerPadding: "200px", // Adjust this value as per your requirement
-    responsive:[
-      {
-        breakpoint: 1024, // For desktops
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 768, // For tablets
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 480, // For mobile
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-    ]
+    centerPadding: "60px", // Adjust this value as per your requirement
+    // responsive:[
+    //   {
+    //     breakpoint: 1024, // For desktops
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 768, // For tablets
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 480, // For mobile
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ]
   };
   var a=0;
   // var settings = {

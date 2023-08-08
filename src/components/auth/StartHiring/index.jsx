@@ -62,7 +62,7 @@ const StartHiring = () => {
     { name: "Innowrap Direct", selected: false },
   ]);
   const [role, setRole] = useState("Employers");
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(1);
   const [experience, setExperfirst] = useState("");
   const [yourOwnSkill, setYourOwnSkill] = useState("");
   const [workEmail, setWorkEmail] = useState("");
@@ -508,7 +508,7 @@ const StartHiring = () => {
       </div>
 
       <div className="relative overflow-x-hidden">
-        <div className="flex bottom-0 absolute h-[50%] w-full z-[-1]">
+        <div className="flex bottom-0 absolute h-[30%] md:h-[50%] w-full z-[-1]">
           <Image
             src="/images/login/dots-bottom.png"
             className="absolute"

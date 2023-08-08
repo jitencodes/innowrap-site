@@ -130,17 +130,18 @@ const Packages = () => {
                             const {title, desc, bullets, btn} = data;
                             return<div key={idx} className="flex flex-1 flex-col shadow-bs-2 md:shadow-none rounded-[16px] md:rounded-none overflow-hidden border-[#838394] border md:border-r border-bd-2 pb-11 max-w-[300px]">
                                 <div className="text-center bg-[#EAF0FF] pt-8 px-4 md:h-[300px] lg:h-[250px] border-b border-[#838394]">
-                                    <p className="text-black text-center font-bold text-2xl mb-2">{title}</p>
+                                    <p className="text-black text-center font-bold text-lg lg:text-2xl mb-2">{title}</p>
                                     <p className="text-black text-center font-normal text-base">{desc}</p>
                                 </div>
 
                                 <div className="text-center flex flex-col justify-between h-full items-center">
                                     <ul className='flex flex-col gap-8 pt-6 mb-9 px-4 lg:px-5'>
                                         {bullets.map((bullet,idx2)=>{
-                                            return<li key={idx2} className='text-left'>
-                                            <div className='inline-block text-center mr-[6px] w-4 h-4 bg-[#D9FEEB] rounded-full text-[#528996] text-xs'>
+                                            return<li key={idx2} className='text-left flex'>
+                                            <div className='mt-1 inline-block text-center mr-[6px] w-4 h-4 bg-[#D9FEEB] rounded-full text-[#528996] text-xs'>
                                             &#10003;
-                                            </div>{bullet}
+                                            </div>
+                                            <p className="p">{bullet}</p>
                                         </li>
                                         })}
                                     </ul>

@@ -10,7 +10,7 @@ import {
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
-  const [role, setRole] = useState('Employers');
+  const [role, setRole] = useState('');
   const [otp, setOtp] = useState();
 
   return (

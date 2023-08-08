@@ -94,7 +94,7 @@ function TestimonialSlidedr() {
       };
   return (
     <>
-        <div className="relative h-full w-full mt-10 md:mt-24">
+        <div className="relative h-full w-full">
           <div className="flex w-full justify-between overflow-x-scroll hidden-scrollbar snap-x" ref={sliderRef}>
               {
                       data?.map((item, idx)=>{

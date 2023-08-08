@@ -11,6 +11,7 @@ import ButtonSecondary from "../Common/Buttons/ButtonSecondary";
 import Navbar from "./Navbar";
 import SidebarMenuMobile from "./SidebarMenuMobile";
 import { BiSearch } from "react-icons/bi";
+import { VscMenu } from "react-icons/vsc";
 
 
 function Header() {
@@ -52,8 +53,8 @@ useEffect(() => {
         // Add other styles for your header here
       };
 
-  return (
-    <header ref={headerRef} style={headerStyle} className={`fixed w-screen z-30 top-0 transition-transform duration-300 bg-white pt-3 md:pt-6 lg:pt-8 px-6 md:px-10 flex justify-between border-b-2 border-gray`}>
+  return (<>
+    <header ref={headerRef} style={headerStyle} className={`fixed w-screen z-30 top-0 transition-transform duration-300 bg-white laptop:pb-3 pt-3 md:pt-6 lg:pt-8 px-6 md:px-10 flex justify-between border-b-2 border-gray`}>
         <div className="block">
             <div className="flex laptop:pb-2">
                 <Link href={'/'} className="relative w-[117px] h-[48px] md:w-[135px] md:h-[56px] lg:w-[117px] lg:h-[48px] xl:w-[135px] xl:h-[56px]">
@@ -150,10 +151,21 @@ useEffect(() => {
             </div>
         </div>
         <div className="hidden laptop:flex justify-center items-center gap-4">
-        <BiSearch className="text-[24px]"/>
-        <SidebarMenuMobile mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
+            <BiSearch className="text-[24px]"/>
+            {/* Mobile icon start */}
+            <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative -mr-2">
+                {!mobileMenu ? (
+                <VscMenu
+                className="text-[24px]"
+                onClick={() => setMobileMenu(true)}
+                />
+                ) : ('')}
+            </div>
+            {/* Mobile icon end */}
         </div>
     </header>
+    <SidebarMenuMobile mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
+  </>
   )
 }
 

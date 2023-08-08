@@ -141,7 +141,7 @@ function page() {
           />
         <p className='uppercase font-semibold text-base tracking-[0.2em] text-white'>discover</p>
         <div className="flex flex-col mb-8 md:mb-10 lg:mb-20 md:flex-row justify-between gap-4 md:gap-0 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
-            <h2 className='font-semibold text-2xl md:text-3xl text-[32px] text-white leading-[44px]'>
+            <h2 className='font-semibold text-2xl md:text-3xl lg:text-[32px] text-white leading-[44px]'>
             What are you looking for ?
             </h2>
           </div>
@@ -151,8 +151,8 @@ function page() {
       <section className="py-10 md:py-20 lg:py-32 px-6 md:px-12 lg:px-20 xl:px-40">
           <div className="flex flex-col mb-8 md:mb-10 md:flex-row justify-between gap-4 md:gap-0">
             <div className="flex gap-2">
-              <span className='inline-block my-auto'><FireIcon className='min-w-[34px]'/></span>
-              <h2 className='font-semibold text-[32px] text-black leading-[44px]'>
+              <div className='my-auto'><FireIcon className='min-w-[34px]'/></div>
+              <h2 className='font-semibold text-xl md:text-3xl lg:text-[32px] text-black leading-[44px]'>
                 Here Are Some Of Our Hottest Jobs
               </h2>
             </div>

@@ -123,9 +123,27 @@ body::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(275deg, #2623d4, #9747ff);
 }
 
+/* headings fonts adjustments */
 
+@media screen and (max-width: 480px) {
+    /* hero heading */
+    p.font-semibold.text-3xl.md\:text-4xl.xl\:text-5xl.text-black.-tracking-\[0\.05em\].md\:mb-10 { 
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+    /* Consultants */
+    h2.font-semibold.text-\[32px\].text-white.leading-\[44px\] {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+    /* Packages */
+    h2.text-center.text-black.font-semibold.text-\[40px\].mb-3 {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+}
 
-/* styling for slot picker */
+/* date/slot picker */
 
 .react-datepicker.calendar{
   border: none !important;
@@ -167,4 +185,4 @@ body::-webkit-scrollbar-thumb:hover {
   
 
 
- /* react-datepicker__day--025 react-datepicker__day--disabled react-datepicker__day--weekend  */
+ /* react-daepicker__day--025 react-datepicker__day--disabled react-datepicker__day--weekend  */
