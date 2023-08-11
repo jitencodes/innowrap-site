@@ -19,6 +19,8 @@ import HeroBanner from "@/components/Common/Banners/HeroBanner";
 import JobSlider from "@/components/Common/Sliders/JobSlider";
 import HeroBanner2 from "@/components/Common/Banners/HeroBanner2";
 import Link from "next/link";
+import Stories from "@/components/Hiring/Stories";
+import FaqSection from "@/components/Hiring/FaqSection";
 
 export default function Home() {
   const getData = (e) => {
@@ -497,30 +499,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative bg-white py-10 md:py-20 lg:py-32 relative">
-        <p className="pl-6 md:pl-12 lg:pl-20 xl:pl-40 uppercase font-semibold text-base tracking-[0.2em] text-blue">
-          OUR SUCCESS STORIES
-        </p>
-        <div className="pl-6 md:pl-12 lg:pl-20 xl:pl-40 flex flex-col md:flex-row justify-between gap-4 md:gap-0 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
-          <h2 className="font-semibold text-[32px] text-black leading-[44px]">
-            Lorem ipsum dolor sit amet.
-          </h2>
-        </div>
-        {/* slider  */}
-        <StorySlider items={sliderJobs} arrowStyle={"above"} />
-      </section>
+      <Stories />
       <Testimonials />
-
-      <section className="flex px-6 md:px-12 lg:px-20 xl:px-40 flex-col items-center pb-10 pd:pb-20 lg:pb-32">
-        <p className="text-blue font-semibold mb-3 tracking-[0.2em] uppercase text-center">
-          FAQS
-        </p>
-        <p className="text-black font-semibold text-2xl md:text-[40px] text-center mb-14 md:mb-20">
-          Frequently asked Questions
-        </p>
-
-        <Faqs />
-      </section>
+      <FaqSection/>
       <Footer />
     </main>
   );

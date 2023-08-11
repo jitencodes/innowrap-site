@@ -9,6 +9,7 @@ import Image from 'next/image'
 import Faqs from '@/components/Common/FAQs/Faqs'
 import HeroBanner2 from '@/components/Common/Banners/HeroBanner2'
 import Link from 'next/link'
+import FaqSection from '@/components/Hiring/FaqSection';
 
 
 export default function Home() {
@@ -114,11 +115,7 @@ export default function Home() {
       </section>
       
       <Testimonials/>
-      <section className="flex px-6 md:px-12 lg:px-20 xl:px-40 flex-col items-center pb-10 pd:pb-20 lg:pb-32">
-            <p className="text-blue font-semibold mb-3 tracking-[0.2em] uppercase text-center">FAQS</p>
-            <p className="text-black font-semibold text-2xl md:text-[40px] text-center mb-14 md:mb-20">Frequently asked Questions</p>
-            <Faqs />
-        </section>
+      <FaqSection/>
       <Footer/>
     </main>
   )

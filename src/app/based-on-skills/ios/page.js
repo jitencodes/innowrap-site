@@ -15,6 +15,8 @@ import HeroBannerxForm from '@/components/Common/Banners/HeroBannerxForm'
 import Image from 'next/image'
 import Faqs from '@/components/Common/FAQs/Faqs'
 import StorySlider from '@/components/Common/Sliders/StorySlider'
+import Stories from '@/components/Hiring/Stories'
+import FaqSection from '@/components/Hiring/FaqSection'
 
 const sliderJobs= [
   {
@@ -383,16 +385,7 @@ export default function Home() {
             <button className='w-fit rounded mt-16 px-2 py-3 text-white bg-gradient-1 shadow-bs-1 font-normal text-base'>Start Hiring</button>
         </section>
       <Testimonials/>
-      <section className="bg-white py-10 md:py-20 lg:py-32 relative">
-        <p className='pl-6 md:pl-12 lg:pl-20 xl:pl-40 uppercase font-semibold text-base tracking-[0.2em] text-blue'>OUR SUCCESS STORIES</p>
-        <div className="pl-6 md:pl-12 lg:pl-20 xl:pl-40 flex flex-col mb-8 md:mb-10 lg:mb-20 md:flex-row justify-between gap-4 md:gap-0 pr-6 md:pr-12 lg:pr-20 xl:pr-40">
-            <h2 className='font-semibold text-2xl md:text-3xl text-[32px] text-black leading-[44px]'>
-            Lorem ipsum dolor sit amet.
-            </h2>
-          </div>
-          {/* slider  */}
-          <StorySlider items={sliderJobs} arrowStyle={'above'} />
-      </section>
+      <Stories />
       <section className="px-6 md:px-12 lg:px-20 xl:px-40 mb-10 md:mb-20 xl:mb-28">
             <div className="flex py-6 md:py-10 items-center w-full rounded-lg px-3 md:px-12" style={{backgroundImage:'url(images/hiring-page/requirement-banner.png)', backgroundSize:'cover'}}>
                 <div className="flex flex-col lg:flex-row md:justify-between items-start gap-4 md:gap-0 md:items-center w-full">
@@ -411,12 +404,7 @@ export default function Home() {
                 </div>
             </div>
       </section>
-      <section className="flex px-6 md:px-12 lg:px-20 xl:px-40 flex-col items-center pb-10 pd:pb-20 lg:pb-32">
-            <p className="text-blue font-semibold mb-3 tracking-[0.2em] uppercase text-center">FAQS</p>
-            <p className="text-black font-semibold text-2xl md:text-[40px] text-center mb-14 md:mb-20">Frequently asked Questions</p>
-
-            <Faqs />
-        </section>
+      <FaqSection/>
       <Footer/>
     </main>
   )
